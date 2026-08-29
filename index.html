@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URBAN BLADE | Luxury Men's Grooming Atelier • BTM 2nd Stage Bengaluru</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      /* Premium Light Palette */
+      --bg-body: #FAF8F5;          /* Warm Alabaster Ivory */
+      --bg-surface: #FFFFFF;       /* Pure Crisp White */
+      --bg-subtle: #F3EFEA;        /* Soft Sand Stone */
+      --bg-accent: #ECE5DC;        /* Warm Champagne Tint */
+      
+      --bronze: #A37A3E;           /* Regal Warm Bronze */
+      --bronze-light: #C7A774;     /* Soft Gold Highlighter */
+      --bronze-dark: #7A5B2B;      /* Deep Rich Bronze */
+      
+      --text-main: #18191B;        /* Deep Charcoal / Onyx (Never pure black) */
+      --text-muted: #6B7280;       /* Neutral Slate */
+      --text-light: #9CA3AF;
+      
+      --border-light: rgba(163, 122, 62, 0.18);
+      --border-subtle: #E8E2D9;
+      --shadow-sm: 0 4px 20px rgba(24, 25, 27, 0.04);
+      --shadow-md: 0 12px 35px rgba(163, 122, 62, 0.08);
+      --shadow-lg: 0 20px 50px rgba(24, 25, 27, 0.08);
+      
+      --radius: 6px;
+      --container: 1220px;
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding-bottom: 75px;
+      overflow-x: hidden;
+    }
+
+    @media (min-width: 992px) {
+      body { padding-bottom: 0; }
+    }
+
+    h1, h2, h3, h4, .serif-font {
+      font-family: 'Cormorant Garamond', serif;
+      letter-spacing: 0.5px;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Urgency Ticker */
+    .top-bar {
+      background: var(--text-main);
+      color: var(--bg-body);
+      font-size: 0.78rem;
+      padding: 8px 0;
+      text-align: center;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .top-bar span {
+      color: var(--bronze-light);
+      font-weight: 700;
+    }
+
+    /* Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(250, 248, 245, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      height: 76px;
+      display: flex;
+      align-items: center;
+      transition: var(--transition);
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      display: grid;
+      place-items: center;
+      color: var(--bronze);
+      font-size: 1.1rem;
+      border-radius: var(--radius);
+    }
+
+    .brand-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1;
+    }
+
+    .brand-sub {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--bronze-dark);
+      font-weight: 600;
+      display: block;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 32px;
+    }
+
+    .nav-link {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: var(--transition);
+      letter-spacing: 0.3px;
+    }
+
+    .nav-link:hover { color: var(--bronze); }
+
+    /* Button System */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 28px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: var(--radius);
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .btn-bronze {
+      background: linear-gradient(135deg, var(--bronze) 0%, var(--bronze-dark) 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 15px rgba(163, 122, 62, 0.25);
+    }
+
+    .btn-bronze:hover {
+      box-shadow: 0 8px 25px rgba(163, 122, 62, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--bronze);
+      color: var(--bronze);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: #FFFFFF;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
+    }
+
+    .btn-whatsapp:hover {
+      background: #1eb857;
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 0 60px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--bg-accent);
+      border: 1px solid var(--border-light);
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--bronze-dark);
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-size: 3.8rem;
+      line-height: 1.08;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 24px;
+    }
+
+    .hero-title i {
+      font-style: italic;
+      color: var(--bronze);
+      font-weight: 500;
+    }
+
+    .hero-lead {
+      font-size: 1.08rem;
+      color: var(--text-muted);
+      margin-bottom: 35px;
+      max-width: 540px;
+      font-weight: 400;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 45px;
+      flex-wrap: wrap;
+    }
+
+    .social-proof-bar {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .avatar-stack {
+      display: flex;
+    }
+
+    .avatar-stack img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 2px solid var(--bg-surface);
+      margin-left: -10px;
+      object-fit: cover;
+    }
+
+    .avatar-stack img:first-child { margin-left: 0; }
+
+    .proof-copy {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .proof-copy strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    /* Hero Visual Card */
+    .hero-visual-wrap {
+      position: relative;
+    }
+
+    .hero-img-main {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      border: 8px solid var(--bg-surface);
+    }
+
+    .floating-offer-badge {
+      position: absolute;
+      bottom: -20px;
+      left: -25px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      padding: 20px 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      max-width: 260px;
+    }
+
+    .floating-offer-badge .badge-tag {
+      font-size: 0.65rem;
+      background: var(--bg-accent);
+      color: var(--bronze-dark);
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .floating-offer-badge h4 {
+      font-size: 1.25rem;
+      color: var(--text-main);
+      margin: 8px 0 4px;
+    }
+
+    .floating-offer-badge p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* Value Pillars Section */
+    .section-pad {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 55px;
+    }
+
+    .section-sub {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--bronze);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.15;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .pillar-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-light);
+    }
+
+    .pillar-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--bg-subtle);
+      border-radius: var(--radius);
+      display: grid;
+      place-items: center;
+      color: var(--bronze);
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .pillar-card h3 {
+      font-size: 1.35rem;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+
+    .pillar-card p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* Menu & Editorial Price Card */
+    .menu-section {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .menu-filter-wrap {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 45px;
+      flex-wrap: wrap;
+    }
+
+    .filter-tab {
+      padding: 9px 22px;
+      border-radius: 50px;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-body);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-tab.active, .filter-tab:hover {
+      background: var(--bronze);
+      color: #FFFFFF;
+      border-color: var(--bronze);
+      box-shadow: 0 4px 12px rgba(163, 122, 62, 0.25);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px 50px;
+    }
+
+    .menu-item {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .menu-item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .menu-item-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .menu-item-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--bronze-dark);
+    }
+
+    .menu-item-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .menu-item-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 6px;
+    }
+
+    .duration-tag {
+      font-size: 0.74rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .quick-add-link {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--bronze);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      cursor: pointer;
+    }
+
+    .quick-add-link:hover { text-decoration: underline; }
+
+    /* Marketing Promo Banner */
+    .marketing-strip {
+      background: linear-gradient(135deg, var(--bg-subtle) 0%, var(--bg-accent) 100%);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 40px;
+      margin: 60px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .promo-content h3 {
+      font-size: 1.85rem;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .promo-content p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .coupon-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-surface);
+      border: 1px dashed var(--bronze);
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-top: 10px;
+      font-family: monospace;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--bronze-dark);
+    }
+
+    /* High-Conversion Packages Grid */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .package-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 40px 32px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .package-card.featured {
+      border: 2px solid var(--bronze);
+      box-shadow: var(--shadow-md);
+      transform: scale(1.02);
+      background: #FFFEFD;
+    }
+
+    .popular-tag {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--bronze);
+      color: #FFFFFF;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 50px;
+    }
+
+    .package-name {
+      font-size: 1.7rem;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .package-target {
+      font-size: 0.8rem;
+      color: var(--bronze-dark);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .package-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      color: var(--text-main);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .package-features {
+      list-style: none;
+      margin-bottom: 35px;
+    }
+
+    .package-features li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--bg-subtle);
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .package-features li i {
+      color: var(--bronze);
+      font-size: 0.8rem;
+    }
+
+    /* Client Testimonials */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .review-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 35px 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .rating-stars {
+      color: #E5A83B;
+      margin-bottom: 15px;
+      font-size: 0.85rem;
+    }
+
+    .review-quote {
+      font-size: 0.94rem;
+      color: var(--text-main);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .client-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .client-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .client-info h4 {
+      font-size: 1.1rem;
+      color: var(--text-main);
+      line-height: 1.1;
+    }
+
+    .client-info span {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+    }
+
+    /* Booking & Reception Hub */
+    .booking-wrapper {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+
+    .form-side {
+      padding: 50px;
+    }
+
+    .meta-side {
+      background: var(--bg-subtle);
+      padding: 50px;
+      border-left: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      font-family: inherit;
+      border-radius: var(--radius);
+      outline: none;
+      transition: var(--transition);
+      font-size: 0.9rem;
+    }
+
+    .form-control:focus {
+      border-color: var(--bronze);
+      box-shadow: 0 0 0 3px rgba(163, 122, 62, 0.1);
+    }
+
+    .info-block {
+      margin-bottom: 26px;
+    }
+
+    .info-block h4 {
+      font-size: 1.25rem;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .info-block p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* Embedded Google Map */
+    .map-container {
+      margin-top: 40px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      height: 320px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #111214;
+      color: #FAF8F5;
+      padding: 60px 0 30px;
+      margin-top: 100px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.6rem;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: #9CA3AF;
+      max-width: 320px;
+    }
+
+    .footer-col h4 {
+      font-size: 1.2rem;
+      color: var(--bronze-light);
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+      font-size: 0.86rem;
+      color: #9CA3AF;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 25px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #6B7280;
+    }
+
+    /* Fixed Mobile Action Bar */
+    .mobile-app-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(14px);
+      border-top: 1px solid var(--border-subtle);
+      padding: 12px 20px;
+      z-index: 1000;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero-grid, .pillars-grid, .menu-grid, .packages-grid, .reviews-grid, .booking-wrapper, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links { display: none; }
+      .hero-title { font-size: 3rem; }
+      .hero-img-main { height: 350px; }
+      .floating-offer-badge { display: none; }
+      .meta-side { border-left: none; border-top: 1px solid var(--border-subtle); }
+      .marketing-strip { flex-direction: column; text-align: center; }
+      .mobile-app-bar { display: flex; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    ⚡ <strong>Bengaluru Flash Privilege:</strong> Get Flat 20% OFF on your first booking with code <span>FIRSTBLADE20</span>. Limited daily slots.
+  </div>
+
+  <header>
+    <div class="container nav-wrap">
+      <a href="#home" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-scissors"></i></div>
+        <div>
+          <div class="brand-title">URBAN BLADE</div>
+          <span class="brand-sub">Men's Grooming Atelier • BTM 2nd Stage</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Studio</a></li>
+        <li><a href="#services" class="nav-link">Grooming Menu</a></li>
+        <li><a href="#packages" class="nav-link">Packages</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#booking" class="nav-link">Reservations</a></li>
+      </ul>
+
+      <a href="#booking" class="btn btn-bronze" style="padding: 10px 22px; font-size: 0.8rem;">
+        <i class="fa-regular fa-calendar-check"></i> Book Chair
+      </a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="trust-pill">
+            <i class="fa-solid fa-star" style="color: #E5A83B;"></i> 4.9 Rated • Over 2,400+ Tech Professionals Served
+          </div>
+          <h1 class="hero-title">Precision Grooming Designed For The <i>Modern Gentleman.</i></h1>
+          <p class="hero-lead">Escape chaotic barbershops. Step into an unhurried, luxury grooming studio in BTM Layout 2nd Stage engineered for sharp cuts, sculpted beards, and executive scalp detox.</p>
+          
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-bronze"><i class="fa-brands fa-whatsapp"></i> Reserve Chair on WhatsApp</a>
+            <a href="tel:+918041238999" class="btn btn-outline"><i class="fa-solid fa-phone"></i> +91 80 4123 8999</a>
+          </div>
+
+          <div class="social-proof-bar">
+            <div class="avatar-stack">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Client">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Client">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" alt="Client">
+            </div>
+            <div class="proof-copy">
+              <strong>98.4% On-Time Seat Guarantee</strong><br>
+              Zero waiting times with direct priority bookings.
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrap">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1000&auto=format&fit=crop" class="hero-img-main" alt="Urban Blade Studio Interior">
+          <div class="floating-offer-badge">
+            <span class="badge-tag">First Visit Offer</span>
+            <h4>Flat 20% Off</h4>
+            <p>Applied directly on WhatsApp confirmation for all new clients this week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-sub">Why Professionals Choose Us</div>
+        <h2 class="section-title">The Urban Blade Standard</h2>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Consultation First</h3>
+          <p>Every cut begins with a face-shape analysis and styling dialogue tailored to your routine.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Hospital-Grade Hygiene</h3>
+          <p>Autoclave-sterilized blades, freshly laundered cape towels, and single-use essentials for every client.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+          <h3>Relaxed Atmosphere</h3>
+          <p>Single-origin artisanal espresso, ambient lounge acoustics, and high-speed Wi-Fi while you wait.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-bottle-droplet"></i></div>
+          <h3>Imported Organic Care</h3>
+          <p>Exclusively formulated sulphate-free shampoos, organic beard balms, and paraben-free styling pomades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad menu-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-sub">Transparent Pricing</div>
+        <h2 class="section-title">The Grooming Menu</h2>
+      </div>
+
+      <div class="menu-filter-wrap">
+        <button class="filter-tab active" onclick="filterMenu('all')">All Services</button>
+        <button class="filter-tab" onclick="filterMenu('hair')">Hair Craft</button>
+        <button class="filter-tab" onclick="filterMenu('beard')">Beard & Shave</button>
+        <button class="filter-tab" onclick="filterMenu('spa')">Scalp & Skin</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <div class="menu-item" data-cat="hair">
+          <div class="menu-item-head">
+            <span class="menu-item-title">Signature Tailored Haircut</span>
+            <span class="menu-item-price">₹299</span>
+          </div>
+          <p class="menu-item-desc">Styling consultation, hair wash with cooling scalp massage, precision scissor & razor cut, plus matte styling.</p>
+          <div class="menu-item-meta">
+            <span class="duration-tag"><i class="fa-regular fa-clock"></i> 35 mins</span>
+            <span class="quick-add-link" onclick="selectService('Signature Tailored Haircut (₹299)')">+ Select Service</span>
+          </div>
+        </div>
+
+        <div class="menu-item" data-cat="hair">
+          <div class="menu-item-head">
+            <span class="menu-item-title">Executive Skin Fade / Taper</span>
+            <span class="menu-item-price">₹449</span>
+          </div>
+          <p class="menu-item-desc">Zero-gap gradual transition with precision foil shaver finish and neck line razor edging.</p>
+          <div class="menu-item-meta">
+            <span class="duration-tag"><i class="fa-regular fa-clock"></i> 45 mins</span>
+            <span class="quick-add-link" onclick="selectService('Executive Skin Fade (₹449)')">+ Select Service</span>
+          </div>
+        </div>
+
+        <div class="menu-item" data-cat="beard">
+          <div class="menu-item-head">
+            <span class="menu-item-title">Bespoke Beard Sculpting</span>
+            <span class="menu-item-price">₹249</span>
+          </div>
+          <p class="menu-item-desc">Geometric line definition, length balance trimming, conditioning beard butter massage, and cold splash.</p>
+          <div class="menu-item-meta">
+            <span class="duration-tag"><i class="fa-regular fa-clock"></i> 25 mins</span>
+            <span class="quick-add-link" onclick="selectService('Bespoke Beard Sculpting (₹249)')">+ Select Service</span>
+          </div>
+        </div>
+
+        <div class="menu-item" data-cat="beard">
+          <div class="menu-item-head">
+            <span class="menu-item-title">Royal Hot-Towel Shave</span>
+            <span class="menu-item-price">₹399</span>
+          </div>
+          <p class="menu-item-desc">Double steamed eucalyptus wrap, rich lather straight-razor glide, and soothing alum & balm treatment.</p>
+          <div class="menu-item-meta">
+            <span class="duration-tag"><i class="fa-regular fa-clock"></i> 30 mins</span>
+            <span class="quick-add-link" onclick="selectService('Royal Hot-Towel Shave (₹399)')">+ Select Service</span>
+          </div>
+        </div>
+
+        <div class="menu-item" data-cat="spa">
+          <div class="menu-item-head">
+            <span class="menu-item-title">Anti-Pollution Scalp Spa</span>
+            <span class="menu-item-price">₹799</span>
+          </div>
+          <p class="menu-item-desc">Bengaluru climate scalp detox, deep follicle nourishing masque, and gentle ozone steam therapy.</p>
+          <div class="menu-item-meta">
+            <span class="duration-tag"><i class="fa-regular fa-clock"></i> 40 mins</span>
+            <span class="quick-add-link" onclick="selectService('Anti-Pollution Scalp Spa (₹799)')">+ Select Service</span>
+          </div>
+        </div>
+
+        <div class="menu-item" data-cat="spa">
+          <div class="menu-item-head">
+            <span class="menu-item-title">Detan Face Brightening Polish</span>
+            <span class="menu-item-price">₹699</span>
+          </div>
+          <p class="menu-item-desc">Gentle enzyme exfoliation, active tan-removal mask, and cold stone lymphatic massage.</p>
+          <div class="menu-item-meta">
+            <span class="duration-tag"><i class="fa-regular fa-clock"></i> 35 mins</span>
+            <span class="quick-add-link" onclick="selectService('Detan Face Brightening Polish (₹699)')">+ Select Service</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="marketing-strip">
+        <div class="promo-content">
+          <h3>First Time Visiting Urban Blade BTM?</h3>
+          <p>Get a complimentary Scalp Detan Massage worth ₹299 with any haircut or package booked today.</p>
+          <div class="coupon-badge">CODE: FIRSTBLADE20</div>
+        </div>
+        <a href="#booking" class="btn btn-bronze" onclick="applyPromo()">Claim Offer on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-sub">Maximum Value</div>
+        <h2 class="section-title">Signature Packages</h2>
+      </div>
+
+      <div class="packages-grid">
+        <div class="package-card">
+          <div>
+            <h3 class="package-name">The Executive Express</h3>
+            <div class="package-target">Quick lunch-break recharge</div>
+            <div class="package-price">₹599</div>
+            <ul class="package-features">
+              <li><i class="fa-solid fa-circle-check"></i> Signature Tailored Haircut</li>
+              <li><i class="fa-solid fa-circle-check"></i> Beard Trim & Razor Clean</li>
+              <li><i class="fa-solid fa-circle-check"></i> Clarifying Hair Wash</li>
+              <li><i class="fa-solid fa-circle-check"></i> Matte Wax Finish</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;" onclick="selectService('Executive Express Package (₹599)')">Select Package</button>
+        </div>
+
+        <div class="package-card featured">
+          <div class="popular-tag">BTM Techie Choice</div>
+          <div>
+            <h3 class="package-name">The Bengaluru Club</h3>
+            <div class="package-target">Full weekend restorative routine</div>
+            <div class="package-price">₹1,099</div>
+            <ul class="package-features">
+              <li><i class="fa-solid fa-circle-check"></i> Master Skin Fade or Scissor Cut</li>
+              <li><i class="fa-solid fa-circle-check"></i> Royal Hot Towel Beard Sculpt</li>
+              <li><i class="fa-solid fa-circle-check"></i> 20 Mins Head & Shoulder Massage</li>
+              <li><i class="fa-solid fa-circle-check"></i> Charcoal Pore Detox Mask</li>
+            </ul>
+          </div>
+          <button class="btn btn-bronze" style="width: 100%;" onclick="selectService('The Bengaluru Club Package (₹1099)')">Select Package</button>
+        </div>
+
+        <div class="package-card">
+          <div>
+            <h3 class="package-name">The Royal Sovereign</h3>
+            <div class="package-target">Wedding, event & complete overhaul</div>
+            <div class="package-price">₹1,899</div>
+            <ul class="package-features">
+              <li><i class="fa-solid fa-circle-check"></i> Senior Stylist Cut & Styling</li>
+              <li><i class="fa-solid fa-circle-check"></i> Full Beard Spa with Hot Oils</li>
+              <li><i class="fa-solid fa-circle-check"></i> Hydrating Scalp Spa Treatment</li>
+              <li><i class="fa-solid fa-circle-check"></i> Gold Radiance Detan Facial</li>
+              <li><i class="fa-solid fa-circle-check"></i> Acupressure Stress-Release</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;" onclick="selectService('The Royal Sovereign Package (₹1899)')">Select Package</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="reviews" style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-sub">Client Stories</div>
+        <h2 class="section-title">Loved by Bengaluru Professionals</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Easily the cleanest men's salon in South Bangalore. The barber spent 15 minutes just consulting on how my fade should sit with my spectacles."</p>
+          <div class="client-meta">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" class="client-avatar" alt="Vikram">
+            <div class="client-info">
+              <h4>Vikramaditya S.</h4>
+              <span>Staff Engineer, ORR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"The Bengaluru Club package is unbeatable. No rushed chairs, no pushy upsells, just great music and hot towels. Booking on WhatsApp was seamless."</p>
+          <div class="client-meta">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" class="client-avatar" alt="Rohan">
+            <div class="client-info">
+              <h4>Rohan Nambiar</h4>
+              <span>Product Lead, Koramangala</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Finally a spot in BTM 2nd Stage with genuine premium vibes. Clean blades straight out of the UV sterilizer box. Highly recommend!"</p>
+          <div class="client-meta">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" class="client-avatar" alt="Deepak">
+            <div class="client-info">
+              <h4>Deepak Hegde</h4>
+              <span>BTM 2nd Stage Resident</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="booking">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-sub">Direct Priority Booking</div>
+        <h2 class="section-title">Reserve Your Seat</h2>
+      </div>
+
+      <div class="booking-wrapper">
+        <div class="form-side">
+          <form onsubmit="handleWhatsAppBooking(event)">
+            <div class="form-group">
+              <label for="clientName">Full Name</label>
+              <input type="text" id="clientName" class="form-control" placeholder="e.g. Varun Kumar" required>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceSelect">Selected Grooming Service</label>
+              <select id="serviceSelect" class="form-control" required>
+                <option value="" disabled selected>-- Select a Service or Package --</option>
+                <option value="Signature Tailored Haircut (₹299)">Signature Tailored Haircut (₹299)</option>
+                <option value="Executive Skin Fade (₹449)">Executive Skin Fade (₹449)</option>
+                <option value="Bespoke Beard Sculpting (₹249)">Bespoke Beard Sculpting (₹249)</option>
+                <option value="Royal Hot-Towel Shave (₹399)">Royal Hot-Towel Shave (₹399)</option>
+                <option value="Anti-Pollution Scalp Spa (₹799)">Anti-Pollution Scalp Spa (₹799)</option>
+                <option value="Detan Face Brightening Polish (₹699)">Detan Face Brightening Polish (₹699)</option>
+                <option value="The Executive Express Package (₹599)">The Executive Express Package (₹599)</option>
+                <option value="The Bengaluru Club Package (₹1099)">The Bengaluru Club Package (₹1099)</option>
+                <option value="The Royal Sovereign Package (₹1899)">The Royal Sovereign Package (₹1899)</option>
+              </select>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label for="bookDate">Preferred Date</label>
+                <input type="date" id="bookDate" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="bookTime">Time Slot</label>
+                <input type="time" id="bookTime" class="form-control" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="promoCode">Promo / Referral Code</label>
+              <input type="text" id="promoCode" class="form-control" placeholder="FIRSTBLADE20">
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%; margin-top: 10px;">
+              <i class="fa-brands fa-whatsapp"></i> Confirm Booking via WhatsApp
+            </button>
+          </form>
+        </div>
+
+        <div class="meta-side">
+          <div>
+            <div class="info-block">
+              <h4>Studio Address</h4>
+              <p>#428, 7th Main Road, 2nd Stage, BTM Layout (Near Udupi Garden Signal), Bengaluru, Karnataka 560076</p>
+            </div>
+
+            <div class="info-block">
+              <h4>Operating Hours</h4>
+              <p>Monday – Saturday: 9:30 AM – 9:30 PM<br>Sunday: 9:00 AM – 9:00 PM</p>
+            </div>
+
+            <div class="info-block">
+              <h4>Direct Desk</h4>
+              <p>Phone: +91 80 4123 8999<br>WhatsApp: +91 98801 23456</p>
+            </div>
+          </div>
+
+          <div style="font-size: 0.78rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 15px;">
+            ✓ Free Valet Parking Available for 2-Wheelers & 4-Wheelers.
+          </div>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15555.22851419388!2d77.60462973715367!3d12.915064789502937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fc91a93031%3A0xf0afe62576cbd18a!2sBTM%202nd%20Stage%2C%20BTM%20Layout%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>URBAN BLADE</h3>
+          <p>Bengaluru's foremost men's grooming atelier. Blending classic British barbering with modern scalp and skin science.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Studio Services</h4>
+          <ul>
+            <li>Precision Hair Styling</li>
+            <li>Beard Architecture</li>
+            <li>Anti-Pollution Scalp Therapy</li>
+            <li>Grooming Packages</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Location</h4>
+          <ul>
+            <li>BTM Layout 2nd Stage</li>
+            <li>Near Udupi Garden Signal</li>
+            <li>Bengaluru, Karnataka 560076</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Urban Blade Men's Grooming Lounge. All rights reserved. Designed for the modern gentleman.
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-app-bar">
+    <a href="#booking" class="btn btn-bronze" style="flex: 1;"><i class="fa-regular fa-calendar-check"></i> Book Chair</a>
+    <a href="tel:+918041238999" class="btn btn-outline" style="padding: 12px 18px;"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+  <script>
+    // Live Tab Filtering
+    function filterMenu(category) {
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const items = document.querySelectorAll('#menuGrid .menu-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-cat') === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Quick-Select Service from Card Click
+    function selectService(serviceName) {
+      const select = document.getElementById('serviceSelect');
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].text.toLowerCase().includes(serviceName.toLowerCase())) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+      document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Auto-Apply Promo Code
+    function applyPromo() {
+      document.getElementById('promoCode').value = "FIRSTBLADE20";
+    }
+
+    // Direct WhatsApp Dispatch
+    function handleWhatsAppBooking(e) {
+      e.preventDefault();
+      
+      const phone = "919880123456"; // Actual reception desk WhatsApp number
+      const name = document.getElementById('clientName').value;
+      const service = document.getElementById('serviceSelect').value;
+      const date = document.getElementById('bookDate').value;
+      const time = document.getElementById('bookTime').value;
+      const promo = document.getElementById('promoCode').value || "None";
+
+      const message = `*NEW APPOINTMENT RESERVATION*%0A` +
+                      `👤 *Client:* ${encodeURIComponent(name)}%0A` +
+                      `✂️ *Service:* ${encodeURIComponent(service)}%0A` +
+                      `📅 *Date:* ${encodeURIComponent(date)}%0A` +
+                      `⏰ *Time Slot:* ${encodeURIComponent(time)}%0A` +
+                      `🎁 *Promo Code:* ${encodeURIComponent(promo)}%0A%0A` +
+                      `_Please confirm slot availability at Urban Blade BTM._`;
+
+      window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+    }
+
+    // Set Default Minimum Date to Today
+    document.addEventListener("DOMContentLoaded", () => {
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('bookDate');
+      if (dateInput) {
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+    });
+  </script>
+</body>
+</html>
